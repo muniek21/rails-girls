@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Little Webapp: Coding Is Magic</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://rawgithub.com/krzysztofbialek/Rails-Girls-Warsaw-App/master/style.css" />
+  </head>
+  <body> 
+<h2><%= @entry.title %></h2>
+  <p><%= @entry.date %></p>
+  <p><%= @entry.contents %></p>
+  <p><%= link_to("Edit this entry", edit_entry_path(@entry)) %></p>
+  <p><%= link_to("Back to all entries", entries_path) %></p>
+ </body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Little Webapp: Coding Is Magic</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://rawgithub.com/krzysztofbialek/Rails-Girls-Warsaw-App/master/style.css" />
+  </head>
+  <body> 
+    <%= form_for(User.new) do |form| %>
+  <p><%= form.label("login") %></p>
+    <p><%= form.text_field("login") %></p>
+    <p><%= form.label("password") %></p>
+    <p><%= form.password_field("password") %></p>
+    <p><%= form.label("password_confirmation") %></p>
+    <p><%= form.password_field("password_confirmation") %></p>
+  <p><%= form.submit %></p>
+<% end %>
+<p><%= link_to("Back", entries_path) %></p>
+  </body>
+</html>

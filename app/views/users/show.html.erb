@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Little Webapp: Coding Is Magic</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://rawgithub.com/krzysztofbialek/Rails-Girls-Warsaw-App/master/style.css" />
+  </head>
+  <body>
+    <p>Your user name is: <%= @user.login %></p>
+    <p>Welcome! <%= @user.login %></p>
+    <p><%= link_to("Back", root_path) %></p>
+  </body>
+</html>

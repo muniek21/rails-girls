@@ -29,6 +29,7 @@
     <h2><%= link_to(entry.title, entry_path(entry)) %></h2>
     <p><%= entry.contents %></p>
     <% end %>
+    <%= link_to("New entry", new_entry_path) %>
   </div>
     
   <img src="http://railsgirls.com/images/rg-warsaw.png" />

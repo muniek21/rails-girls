@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="https://rawgithub.com/krzysztofbialek/Rails-Girls-Warsaw-App/master/style.css" />
   </head>
   <body> 
-<%= form_for(Entry.new) do |form| %>
+    <%= form_for :entry, :url => entries_path, :html => { :multipart => true } do |form| %>
   <p><%= form.label("title") %></p>
   <p><%= form.text_field("title") %></p>
   <p><%= form.label("contents") %></p>
   <p><%= form.text_area("contents") %></p>
+    <p><%= form.file_field :image %></p>
   <p><%= form.submit %></p>
-<% end %>
+  <% end %>
 <p><%= link_to("Back to all entries", entries_path) %></p>
   </body>
 </html>

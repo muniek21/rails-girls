@@ -7,3 +7,9 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 end
 # wow, ucze sie gita
+
+
+def cos
+  pass
+end
+
